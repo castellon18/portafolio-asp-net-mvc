@@ -1,0 +1,52 @@
+﻿@model ContactoViewModel;
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<div class="container bg-body-tertiary border rounded shadow p-2 my-2">
+    <form asp-controller="Contacto" asp-action="Index" method="post">
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger fade show" role="alert"></div>
+        <div class="card">
+            <div class="card-header text-center">
+                <h1 class="card-title fw-semibold text-primary-emphasis text-uppercase">Contáctame</h1>
+                <p class="card-subtitle text-center text-muted mb-4">
+                    Puedes enviarme un mensaje si deseas que haga un proyecto para ti o tu empresa.
+                </p>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="form-floating col-md-6">
+                        <input type="text" asp-for="Nombres" class="form-control form-control-lg" placeholder="Maria Jose">
+                        <label asp-for="Nombres" class="mx-2"></label>
+                        <span asp-validation-for="Nombres" class="text-danger mt-1 d-block"></span>
+                    </div>
+                    <div class="form-floating col-md-6">
+                        <input type="text" asp-for="Apellidos" class="form-control form-control-lg" placeholder="Carrillo Zambrana">
+                        <label asp-for="Apellidos" class="mx-2"></label>
+                        <span asp-validation-for="Apellidos" class="text-danger mt-1 d-block"></span>
+                    </div>
+                    <div class="form-floating col-12">
+                        <input asp-for="Email" type="email" class="form-control form-control-lg" placeholder="name@example.com">
+                        <label asp-for="Email" class="mx-2"></label>
+                        <span asp-validation-for="Email" class="text-danger mt-1 d-block"></span>
+                    </div>
+                    <div class="form-floating col-12">
+                        <textarea asp-for="Mensaje" class="form-control form-control-lg" style="height:100px" placeholder="Escribe aquí tu mensaje..."></textarea>
+                        <label asp-for="Mensaje" class="mx-2"></label>
+                        <span asp-validation-for="Mensaje" class="text-danger mt-1 d-block"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-outline-success btn-lg">Enviar</button>
+                <a asp-action="Index" asp-controller="Home" class="btn btn-outline-secondary btn-lg">Cancelar</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

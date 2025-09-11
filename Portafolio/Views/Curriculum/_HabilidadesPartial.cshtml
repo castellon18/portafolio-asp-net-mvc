@@ -1,0 +1,26 @@
+﻿@model IEnumerable<HabilidadesModel>;
+<div class="card mt-3">
+    <div class="card-header">
+        <h4 class="card-title text-primary text-uppercase">Habilidades Tecnicas</h4>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            @foreach(var item in Model)
+            {
+                <li class="list-group-item">
+                    <div class="fw-bold mb-1">@item.Titulo</div>
+                    @foreach(var habilidad in item.Habilidades)
+                    {
+                        <div class="d-flex align-items-start">
+                            <div class="text-secondary fw-semibold">@habilidad.Nombre</div>
+                            @foreach(var texto in habilidad.Lista)
+                            {
+                                <span class="badge text-bg-primary ms-3">@texto</span>
+                            }
+                        </div>
+                    }    
+                </li>     
+            }
+        </ul>
+    </div>
+</div>

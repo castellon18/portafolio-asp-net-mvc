@@ -1,0 +1,64 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+*.suo
+*.user
+*.log
+*.pdb
+*.tlog
+*.vspscc
+*.vssscc
+*.bak
+*.scc
+
+# VS Code files
+.vscode/
+.vs/
+
+# Package Management
+packages/
+node_modules/
+
+# Visual Studio temporary files
+*.obj
+*.exe
+*.dll
+*.lib
+*.ncb
+*.sql
+*.docstates
+*.vsp
+*.sdf
+*.cache
+*.aps
+*.bsc
+*.cpd
+*.dbs
+*.ilk
+*.ipch
+*.isp
+*.msc
+*.pch
+*.pgm
+*.resources
+*.rsp
+*.sbr
+*.ssc
+*.tds
+*.vdp
+*.vgdb
+*.zip
+*.vspscc
+*.csproj.user
+*.vcxproj.user
+*.sqlproj.user
+*.njsproj.user
+*.dbproj.user
+
+# Solution and Project files
+*.sln.docstates
+*.vssscc
+
+# Other
+Thumbs.db
+ehthumbs.db

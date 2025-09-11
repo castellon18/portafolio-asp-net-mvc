@@ -1,0 +1,25 @@
+﻿@model CurriculumViewModel;
+@{
+    ViewData["Title"] = "Curriculum";
+}
+
+<div class="container bg-body-tertiary border rounded shadow p-2 my-2">
+    <!--Titulo-->
+    <partial name="_TituloPartial" />
+    
+    <!--Perfil Profesional-->
+    <partial name="_PerfilProfesionalPartial" />
+    
+    <!--Formación Académica-->
+    <partial name="_FormacionAcademicaPartial" model="@Model.FormacionAcademica"/>
+    
+    <!--Habilidades-->
+    <partial name="_HabilidadesPartial" model="@Model.Habilidades"/>
+
+    <!--Idiomas-->
+    <partial name="_IdiomaPartial" />
+
+    <!--Experiencia-->
+    <partial name="_ExperienciaLaboralPartial" model="@Model.Experiencias"/>
+    
+</div>
