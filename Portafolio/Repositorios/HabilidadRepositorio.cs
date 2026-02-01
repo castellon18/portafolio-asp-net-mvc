@@ -14,8 +14,8 @@ namespace Portafolio.Repositorios
                     Titulo = "Programación",
                     Habilidades =
                     [
-                        new Habilidad { Nombre = "Backend", Lista = ["ASP.NET Core", "Node.js", "Express"] },
-                        new Habilidad { Nombre = "Fronted", Lista = ["HTML5", "CSS3", "JavaScript", "TypeScript", "Angular", "Blazor"] },
+                        new Habilidad { Nombre = "Backend", Lista = ["C#", ".NET", "Entity Framework Core", "Dapper"] },
+                        new Habilidad { Nombre = "Fronted", Lista = ["HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Blazor", "Bootstrap", "Tailwind CSS", "Daisy UI"] },
                         new Habilidad { Nombre = "Bases de Datos", Lista = ["SQL Server", "PostgreSQL"] },
                         new Habilidad { Nombre = "Otras Tecnologías", Lista = ["Office 365", "Git", "GitHub", "Postman"] },
                     ]

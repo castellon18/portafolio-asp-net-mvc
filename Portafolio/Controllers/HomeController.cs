@@ -18,9 +18,7 @@ namespace Portafolio.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            List<ProyectoViewModel> proyectos = [.. _proyectoRepositorio.ObtenerProyectos().Take(3)];
-            HomeIndexViewModel modelo = new() { Proyectos = proyectos };
-            return View(modelo);
+            return View();
         }
     }
 }

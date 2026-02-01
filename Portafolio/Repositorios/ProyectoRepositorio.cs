@@ -21,21 +21,21 @@ namespace Portafolio.Repositorios
                     {
                         Titulo = "Portafolio",
                         Descripcion = "Pagina web personal implementada con Angular 19.2.0, poniendo en practica los conocimientos aprendidos.",
-                        ImagenUrl = "/assets/img/Porfolio-Angular.png",
+                        ImagenUrl = "/assets/img/Portafolio-ASP-NET-MVC.png",
                         Link = "https://github.com/castellon18/portfolio-angular.git"
                     },
                     new ProyectoViewModel
                     {
                         Titulo = "Reddit",
                         Descripcion = "Red Social para compartir en comunidad, elaborada en Angular",
-                        ImagenUrl = "/assets/img/reddit.PNG",
+                        ImagenUrl = "/assets/img/Country-App.png",
                         Link = "https://www.reddit.com"
                     },
                     new ProyectoViewModel
                     {
                         Titulo = "Steam",
                         Descripcion = "Tienda para comprar video juegos, elaborada en Angular",
-                        ImagenUrl = "/assets/img/steam.PNG",
+                        ImagenUrl = "/assets/img/App-Store.png",
                         Link = "https://www.store.steampowered.com"
                     }
             ];
